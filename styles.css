@@ -75,7 +75,6 @@ h1 {
     width: 30px;
     height: 30px;
     background-color: red;
-    transform: rotate(45deg);
     animation: move 5s infinite;
 }
 
@@ -101,11 +100,11 @@ h1 {
 
 @keyframes move {
     0% {
-        transform: translateY(0) rotate(45deg);
+        transform: translateY(0) rotate(-46deg);
         opacity: 1;
     }
     100% {
-        transform: translateY(-1000px) rotate(45deg);
+        transform: translateY(-1000px) rotate(0deg);
         opacity: 0;
     }
 }

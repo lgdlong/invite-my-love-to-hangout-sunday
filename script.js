@@ -21,6 +21,7 @@ document.getElementById('yes').addEventListener('click', () => {
 
 document.getElementById('no').addEventListener('click', () => {
     alert('Oh, không sao. Hy vọng lần sau.');
+    swapButtons();
 });
 
 const noButton = document.getElementById('no');
@@ -31,5 +32,7 @@ function swapButtons() {
     choices.insertBefore(noButton, yesButton);
 }
 
-noButton.addEventListener('mouseover', swapButtons);
-noButton.addEventListener('click', swapButtons);
+// Xóa sự kiện "mouseover"
+// noButton.addEventListener('mouseover', swapButtons);
+// Thêm sự kiện "click"
+// noButton.addEventListener('click', swapButtons);
